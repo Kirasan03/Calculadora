@@ -1,12 +1,21 @@
-h1 {
-    color: rgb(9, 243, 243);
+.titulo2 {
+    color: #CEFDFF;
+}
+
+.titulo1{
+    color: #F24C00;
+    font-weight: bolder;
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body{
-    background: #f6f5f7; 
+    
     font-family: 'Montserrat', sans-serif;
     color: #3E363F;
+    background-image: url("./estestoscopio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .container{
     width: 900px;
@@ -29,12 +38,12 @@ body{
 }
 
 #detalle{
-    background: #f7c3cf;
+    background: #A288E3;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
-    color: #7c0deb;
+    color:whitesmoke;
 }
 .contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
@@ -57,3 +66,52 @@ body{
     margin-bottom: 5px;
     display: none;
 }
+
+
+.mi-boton {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 11px 22px; /* Espacio alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 8px; /* Redondear las esquinas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+  }
+  
+  /* Estilo cuando se pasa el cursor por encima */
+  .mi-boton:hover {
+    background-color: #3e8e41;
+  }
+
+  label {
+    font-size: 18px; /* Tamaño de fuente para la etiqueta */
+    display: block; /* Mostrar en bloque para que la etiqueta y el input estén en líneas separadas */
+    margin-bottom: 10px; /* Espacio debajo de la etiqueta */
+  }
+  
+  .mi-input {
+    padding: 10px 15px; /* Espacio alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente para el input */
+    border-radius: 8px; /* Redondear las esquinas */
+    border: 1px solid #ccc; /* Borde */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all 0.2s ease-in-out; /* Animación suave para los cambios */
+  }
+  
+  .mi-input:focus {
+    outline: none; /* Eliminar el contorno predeterminado */
+    border-color: #6CA1F8; /* Cambiar el color del borde al seleccionar el input */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(108, 161, 248, 0.5); /* Agregar sombra adicional */
+  }
+  
+  /* Estilo para el placeholder del input */
+  .mi-input::placeholder {
+    color: #999; /* Color del placeholder */
+    opacity: 1; /* Opacidad del placeholder */
+  }
+  
